@@ -1,0 +1,124 @@
+
+/* header styling */
+
+/* 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.search {
+  position: relative;
+} */
+
+
+/* .search-input {
+  padding: 1em;
+  background-color: #DEDFD9;
+  font-size: .8rem;
+  width: 100%;
+  border: none;
+  border-radius: .8em;
+  display: flex;
+} */
+
+/* .search {
+  padding: 0.5rem 1rem 0.5rem 0.4rem;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  background-color: var(--accent-color-1);
+  padding: 1rem;
+  
+}
+
+.search-input {
+  flex-grow: 1;
+  background-color: var(--accent-color-1);
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+} */
+
+
+/* header section styling */
+.header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.header .container h4 {
+  color: var(--accent-color-3);
+  font-weight: normal;
+}
+
+.header .container h4 span {
+  color: var(--secondary-color);
+}
+
+.header .container h1 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.header .container h1 .indented {
+  display: inline-block;
+  text-indent: 1.5rem;
+}
+
+.header .container h1 .indented span {
+  color: var(--secondary-color);
+}
+
+/* main section styling */
+
+.main .container {
+  width: 85%;
+  margin: auto;
+}
+
+/* search section styling */
+
+.main .container .search form {
+  position: relative;
+  width: 100%;
+  background-color: var(--accent-color-1);
+  display: flex;
+  padding: 1rem 1.4rem;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.main .container .search form input[type="search"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: inherit;  
+}
+
+.main .container .search form input[type="search"]::placeholder {
+  color: var(--accent-color-2);
+}
+
+.main .container .search form .search-btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: inherit;
+}
