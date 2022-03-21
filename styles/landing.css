@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+/* logo&slogo */
+.logo,
+.para-of-slogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-of-logo {
+  width: 400px;
+}
+.slogo {
+  text-align: center;
+  margin-top: -55px;
+  color: #604a32;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+/* style the travel photo and the qutation */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-pic {
+  width: 348px;
+  height: 432px;
+  margin-top: 30px;
+}
+.para-of-travel {
+  text-align: center;
+  color: #604a32;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* style the "Start Your Journey" Button */
+footer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.journey-button {
+  width: 218px;
+  height: 46px;
+  background: #fcaf0d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+  margin-top: 65px;
+}
+.start {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
