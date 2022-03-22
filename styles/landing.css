@@ -17,7 +17,7 @@ body {
 .slogo {
   text-align: center;
   margin-top: -55px;
-  color: #604a32;
+  color: var(--accent-color-3);
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@ main {
 }
 .para-of-travel {
   text-align: center;
-  color: #604a32;
+  color: var(--accent-color-3);
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -49,7 +49,7 @@ footer {
 .journey-button {
   width: 218px;
   height: 46px;
-  background: #fcaf0d;
+  background: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 27px;
   margin-top: 65px;
@@ -60,4 +60,41 @@ footer {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  padding: 0.9em;
+}
+@media screen and (min-width: 1023px) {
+  body {
+    height: 100vh;
+    background-image: url("./assets/images/landing-page/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo {
+    margin-top: 5em;
+    margin-right: 35em;
+  }
+  .para-pf-slogo {
+    margin-top: 1em;
+    margin-right: 33em;
+  }
+  .travel-pic {
+    display: none;
+  }
+  .journey-button {
+    width: 494px;
+    height: 73px;
+
+    border-radius: 27px;
+    margin-top: 65px;
+    margin-right: 42em;
+  }
+  .start {
+    font-size: 1.8em;
+  }
+  .para-of-travel {
+    position: absolute;
+    top: 25em;
+    right: 39em;
+  }
 }
