@@ -1,7 +1,8 @@
 body {
   width: 100%;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /* logo&slogo */
 .logo,
@@ -51,6 +52,7 @@ footer {
   height: 46px;
   background: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0em;
   border-radius: 27px;
   margin-top: 65px;
 }
@@ -64,37 +66,45 @@ footer {
 }
 @media screen and (min-width: 1023px) {
   body {
+    width: 100%;
     height: 100vh;
-    background-image: url("./assets/images/landing-page/bg.png");
+    background-image: url("/assets/images/landing-page/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  .logo {
-    margin-top: 5em;
-    margin-right: 35em;
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.2em;
   }
-  .para-pf-slogo {
-    margin-top: 1em;
-    margin-right: 33em;
-  }
+
   .travel-pic {
     display: none;
+  }
+  .explore {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.2em;
   }
   .journey-button {
     width: 494px;
     height: 73px;
+    box-shadow: none;
 
-    border-radius: 27px;
-    margin-top: 65px;
-    margin-right: 42em;
+    margin-top: 14.5em;
   }
   .start {
     font-size: 1.8em;
   }
   .para-of-travel {
-    position: absolute;
-    top: 25em;
-    right: 39em;
+    padding-top: 0.25em;
+    font-size: 1.6em;
   }
 }
