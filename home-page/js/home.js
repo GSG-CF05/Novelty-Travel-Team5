@@ -1,4 +1,4 @@
-const HOLIDAYS_API_KEY = "a85d9a0ad96c80fc5d8453809a125d48386df1fb";
+const HOLIDAYS_API_KEY = "2dbcfa8276724205e54379f448524e30270f7fef";
 const HOLIDAYS_API_BASE_URL = "https://calendarific.com/api/v2";
 
 /* Fetch supported countries Logic */

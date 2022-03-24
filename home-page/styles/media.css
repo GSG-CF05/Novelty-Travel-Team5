@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+  .header {
+    background-color: var(--accent-color-1);
+    background-image: url("../../assets/images/holidays-page/background.svg");
+    margin-top: 0 !important;
+  }
+
+  .header .container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+
+  .header .container .search {
+    flex-basis: 35%;
+  }
+
+  .header .container .search form {
+    background-color: #fff !important;
+  };
+
+  .hotels-controls {
+    display: none;
+  }
+
+  .cities .cities-container .city h5 {
+    font-size: 1.5rem;
+    top: 5rem !important;
+    left: 2.5rem !important;
+  }
+
+}
