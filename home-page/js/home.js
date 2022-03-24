@@ -24,6 +24,7 @@ searchBtn.addEventListener("click", (e) => {
   supportedCountriesPromise.then((countries) => {
     const country = countries.filter(country => country["country_name"] === serachKeyword)[0];
     if(country) {
+      localStorage.setItem("country", country["country_name"]);
       localStorage.setItem("countryCode", country["iso-3166"]);
       searchInput.value = "";
       window.location.href = "../holidays-page/holidays.html";
