@@ -1,0 +1,7 @@
+@media screen and (min-width: 1023px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
