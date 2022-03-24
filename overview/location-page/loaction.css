@@ -1,0 +1,117 @@
+main,
+.container .sec-pic,
+.container .thrid-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  height: 18vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  position: relative;
+  right: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.header .container i {
+  font-size: 1.5rem;
+  color: var(--accent-color-3);
+}
+
+.header .container h1 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.header .container h1 .indented {
+  display: inline-block;
+  text-indent: 1.5rem;
+}
+
+.header .container h1 span {
+  color: var(--secondary-color);
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 25px;
+  position: relative;
+}
+.content {
+  position: absolute;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-right: 98px;
+  padding-bottom: 67px;
+  padding-top: 52px;
+}
+.content p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.title-of-pic {
+  color: #5ca3b5;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -15px;
+}
+.sec-pic {
+  margin-left: 25px;
+  width: 377px;
+  height: 230px;
+}
+.sec-content {
+  color: #5ca3b5;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  padding-top: 5px;
+  margin-right: 115px;
+  margin-bottom: -17px;
+}
+button {
+  background: #c4942f;
+  border-radius: 74px;
+  width: 104px;
+  height: 44px;
+  margin-left: 160px;
+}
+button p {
+  color: white;
+  font-size: 13px;
+}
+.thrid-pic {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.device {
+  display: none;
+}
+img {
+  width: 24.125em;
+  height: 13.0625em;
+}
