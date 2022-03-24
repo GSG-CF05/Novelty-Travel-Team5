@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+  .header {
+    background-color: var(--accent-color-1);
+    background-image: url("../../assets/images/holidays-page/background.svg");
+    margin-bottom: 2rem;
+  }
+
+  .main .container {
+    display: flex;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+  }
+  .main .container .filter {
+    margin-top: 2rem;
+    max-width: 25%;
+    align-self: flex-start;
+    flex-grow: 1;
+    gap: 3rem !important;
+  }
+
+  .main .container .filter .title {
+    align-self: flex-start;
+  }
+
+  .main .container .filter .date-picker {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main .container .filter .date-picker select {
+    width: 50%;
+  }
+
+  .main .container .holidays {
+    max-width: 70%;
+  }
+
+  .main .container .holidays .holiday {
+    max-width: 21%;
+  }
+
+  .main .container .holidays .holiday img{
+    height: 320px;
+  }
+
+  .main .container .holidays .holiday .description {
+    margin: 0.5rem;
+  }
+
+}
