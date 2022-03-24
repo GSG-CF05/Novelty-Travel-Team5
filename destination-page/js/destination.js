@@ -24,12 +24,12 @@ function createElementDestination(allData){
 
     let cardPictureImage = document.createElement('img')
     cardPictureImage.setAttribute('class','card__picture-img')
-    cardPictureImage.src = src
+    cardPictureImage.src = allData.url
     cardPicture.appendChild(cardPictureImage)//!End create card picture elements
 
     let headingTertirary = document.createElement('h3')
     headingTertirary.setAttribute('class','heading-tertirary')
-    headingTertirary.textContent = hotel
+    headingTertirary.textContent = allData.name
     cardHeader.appendChild(headingTertirary)//! End card header elements
     
     //! Create card details elements
@@ -39,12 +39,12 @@ function createElementDestination(allData){
 
     let cardSubHeading = document.createElement('h4')
     headingTertirary.setAttribute('class','card__sub-heading')
-    headingTertirary.textContent = subHeading
+    headingTertirary.textContent = allData.hotelId
     cardDetails.appendChild(cardSubHeading)
 
     let cardText = document.createElement('p')
     headingTertirary.setAttribute('class','card__text')
-    headingTertirary.textContent = cardTextDetails
+    headingTertirary.textContent = allData.description.short
     cardDetails.appendChild(cardText)
 
     //! Create card data elements
@@ -61,7 +61,7 @@ function createElementDestination(allData){
     cardIconMap.appendChild(useMap)
 
     let spanMap = document.createElement('span')
-    spanMap.textContent = textCountrySpan
+    spanMap.textContent = allData.address.countryName
     cardDataMap.appendChild(spanMap)//! End card data
 
     //! Create card data elements
@@ -78,7 +78,7 @@ function createElementDestination(allData){
     cardIconCalender.appendChild(useCalender)
 
     let spanCalender = document.createElement('span')
-    spanCalender.textContent = textCalenderSpan
+    spanCalender.textContent = allData.checkIn.from + allData.checkIn.to
     cardDataCalendar.appendChild(spanCalender)//! End card data
 
     //! Create card data elements
@@ -95,7 +95,7 @@ function createElementDestination(allData){
     cardDataFlag.appendChild(useFlag)
 
     let spanFlag = document.createElement('span')
-    spanFlag.textContent = textFlagSpan
+    spanFlag.textContent = allData.timezone
     cardDataFlag.appendChild(spanFlag)//! End card data
 
     //! Create card data elements
@@ -112,7 +112,7 @@ function createElementDestination(allData){
     cardDataUser.appendChild(useUser)
 
     let spanUser = document.createElement('span')
-    spanUser.textContent = textUserSpan
+    spanUser.textContent = allData.phoneNumbers[0]
     cardDataUser.appendChild(spanUser)//! End card data
 
 
@@ -127,11 +127,11 @@ function createElementDestination(allData){
     cardFooter.appendChild(footerText)
 
     let footerSpanValue = document.createElement('span')
-    footerSpanValue.textContent = footerNum
+    footerSpanValue.textContent = allData.emails[0]
     footerText.appendChild(footerSpanValue)
 
     let footerSpanText = document.createElement('span')
-    footerSpanText.textContent = footerText
+    footerSpanText.textContent = allData.address.line1
     footerText.appendChild(footerSpanText)
 
 
@@ -140,11 +140,11 @@ function createElementDestination(allData){
     cardFooter.appendChild(footerText2)
 
     let footerSpanValue2 = document.createElement('span')
-    footerSpanValue2.textContent = footerNum2
+    footerSpanValue2.textContent = allData.address.postalCode
     footerText2.appendChild(footerSpanValue2)
 
     let footerSpanText2 = document.createElement('span')
-    footerSpanText2.textContent = footerText2
+    footerSpanText2.textContent = allData.updatedAt
     footerText2.appendChild(footerSpanText2)
 
     //! Buttons Footer
@@ -158,12 +158,46 @@ function createElementDestination(allData){
 
 
 //? Get all data from API and put the information in card details
-function getCardDetails(api){
-    fetch(api)
+
+document.addEventListener('DOMContentLoaded', readLocalStorage);
+
+// const getHotelPromise = async function(cityCode) {
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   return data.response.holidays;
+// };
+
+// function readLocalStorage() {
+//   if(localStorage.getItem("countryCode")) {
+//     getHolidaysPromise(localStorage.getItem("countryCode"), getYear(), getMonth(), getDay()).then(holidays => {
+//       holidays.forEach((holiday) => createElementDestination(holiday));
+//     });
+//   }
+// }
+
+function getCityLocalStorage(){
+  let data = localStorage.getItem("countryCode")
+  if(data) {
+    getCardDetails(data);
+
+  }
+}
+
+// const getImagePromise = async function(cityName) {
+//     const response = await fetch();
+//     const data = await response.json();
+//     return data["photos"]["results"];
+//   }
+
+function getCardDetails(){
+    
+    fetch('../holidays-page/data.json')
     .then((city)=> {
+
         return city.json()
     }).then((details) => {
         details.forEach(data => {
+          if(data.country === localStorage.getItem("countryCode"))
             //! Create object to all required data
             allData = {src:data.src,
                         hotel:data.hotel,
