@@ -1,3 +1,10 @@
+main,
+.container .sec-pic,
+.container .thrid-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header .container {
   width: 85%;
   margin: auto;
@@ -68,7 +75,7 @@ main {
   margin-bottom: -15px;
 }
 .sec-pic {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .sec-content {
   color: #5ca3b5;
@@ -96,7 +103,7 @@ button p {
   font-size: 13px;
 }
 .thrid-pic {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: 15px;
 }
 .device {
