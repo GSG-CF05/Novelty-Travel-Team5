@@ -4,6 +4,13 @@
 
 (Novelty Travel) [https://gsg-cf05.github.io/Team5-Novelty-Travels/]
 
+## Api links:
+
+- Hotels [https://docs.impala.travel/]
+- Holidays [https://calendarific.com/]
+- Photos [https://unsplash.com/documentation]
+- Tours [https://maps.googleapis.com/]
+
 ## Why did we create this app?(the problem)
 
 Who does not want to travel and explore the world? But is travel available to each of us at any time we want? The answer is of course not. Because if you want to travel, you have to wait for the holidays because you are busy at work. Also, you need to know the holidays in the country you want to go to. This means that travel requires a lot of planning in advance, you will browse many websites on the Internet, then you will need other websites to display hotels, and perhaps any website that does not have all the hotels in the city you want to go to, meaning that you need to search for every information you need and may be confused between all these websites and information that you need.
