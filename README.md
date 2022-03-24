@@ -2,7 +2,7 @@
 
 ## Name of the project - All you need to plan your next journey in one place. :-
 
-(Novelty Travel) [https://gsg-cf05.github.io/Team5-Novelty-Travels/]
+(Novelty Travel) [https://gsg-cf05.github.io/Novelty-Travel-Team5/]
 
 ## Api links:
 
