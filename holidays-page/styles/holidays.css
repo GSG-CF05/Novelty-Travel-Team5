@@ -1,0 +1,128 @@
+/* header section styling */
+.header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  height: 18vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  position: relative;
+  right: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.header .container i {
+  font-size: 1.5rem;
+  color: var(--accent-color-3);
+}
+
+.header .container h1 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.header .container h1 .indented {
+  display: inline-block;
+  text-indent: 1.5rem;
+}
+
+.header .container h1 span {
+  color: var(--secondary-color);
+}
+
+/* main section styling */
+
+.main .container {
+  width: 90%;
+  margin: auto;
+}
+
+/* filter section styling */
+
+.main .container .filter {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem ;
+}
+
+.main .container .filter .title {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--accent-color-3);
+  font-size: 1.05rem;
+}
+
+.main .container .filter .date-picker {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+
+.main .container .filter .date-picker select {
+  background-color: var(--accent-color-1);
+  border: none;
+  outline: none;
+  flex-basis: 30%;
+  padding: 0.3rem;
+  border-radius: 1.25rem;
+  color: var(--accent-color-3);
+  text-align: center;
+  /* TODO: style the dropdown icon */
+}
+
+/* holidays section styling */
+
+.main .container .holidays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.35rem;
+}
+
+.main .container .holidays .holiday {
+  flex-basis: 47.5%;
+  background-color: var(--accent-color-1);
+  margin-bottom: 5%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .container .holidays .holiday:hover {
+  transform:scale(1);
+  opacity:1;
+  transform: translate3d(0, -3px, 0);
+}
+
+.main .container .holidays .holiday img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.main .container .holidays .holiday .description {
+  padding: 0.35rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main .container .holidays .holiday .description h4{
+  margin-bottom: 0.5rem;
+  color: var(--accent-color-3);
+}
+
+.main .container .holidays .holiday .description p {
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  text-indent: 0.25rem;
+  font-weight: bold;
+}
+
+
+
