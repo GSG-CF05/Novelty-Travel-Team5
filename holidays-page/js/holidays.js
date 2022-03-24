@@ -76,3 +76,10 @@ function getMonth() {
 function getDay() {
   return localStorage.getItem("day");
 }
+
+/* Link the page to locations page */
+
+const holidayCard = document.querySelector(".holidays");
+holidayCard.addEventListener("click", () => {
+  window.location.href = "../locations-page/locations.html";
+})
