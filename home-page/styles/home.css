@@ -60,14 +60,15 @@
   font-size: 0.8rem;
 }
 
-.main .container .search form input[type="search"] {
+.main .container .search form input[type="input"] {
   flex-grow: 1;
   border: none;
   outline: none;
-  background-color: inherit;  
+  background-color: inherit; 
+  color: var(--accent-color-3); 
 }
 
-.main .container .search form input[type="search"]::placeholder {
+.main .container .search form input[type="input"]::placeholder {
   color: var(--accent-color-2);
 }
 
@@ -181,11 +182,12 @@
 }
 
 .hotels .hotels-controls ul li {
-  width: 1rem;
-  height: 0.65rem;
+  width: 0.9rem;
+  height: 0.6rem;
   border-radius: 50%;
   display: inline-block;
   background-color: var(--accent-color-1);
+  transition: all 0.35s ease-in-out;
 }
 
 .hotels .hotels-controls ul li.active {
