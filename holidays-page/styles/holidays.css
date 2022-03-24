@@ -1,12 +1,13 @@
+
+
 /* header section styling */
 .header .container {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: flex;
   height: 18vh;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.8rem;
+  justify-content: space-evenly;
   position: relative;
   right: 0.25rem;
   margin-bottom: 1rem;
@@ -36,12 +37,15 @@
 .main .container {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* filter section styling */
 
 .main .container .filter {
   display: flex;
+  flex-direction: row;
   gap: 0.5rem;
   align-items: center;
   margin-bottom: 1rem ;
@@ -78,7 +82,7 @@
 .main .container .holidays {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 5%;
   padding: 0.35rem;
 }
 
@@ -91,6 +95,7 @@
   transition: all 0.35s ease;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .main .container .holidays .holiday:hover {
